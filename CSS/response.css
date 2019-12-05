@@ -1,0 +1,57 @@
+html {
+	background-color: gree;
+	font-size:30px;
+}
+
+.main-div {
+	height:80vh;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Pacifico";
+	text-align: center;
+
+}
+
+.main-div h1 {
+	font-size: 1.6rem;
+}
+
+.main-div p {
+	font-family: "Quicksand";
+	font-size: 1rem;
+}
+
+#homeButton {
+	transform:scale(1.2);
+	font-size: .5rem;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: transparent;
+	border:unset;
+	padding:0;
+	padding: 1px 12px;
+	border: 2px solid black;
+	border-radius:10px;
+	font-family:"Quicksand";
+	cursor:pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+#homeButton a {
+	transition: all 0.2s ease-in-out;
+	color:black;
+	text-decoration: none;
+}
+
+#homeButton:hover a {
+	color:white;
+}
+
+#homeButton:hover {
+	background-color:black;
+	color:white
+}
+

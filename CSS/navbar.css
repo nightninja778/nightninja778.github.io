@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald|Pacifico|Quicksand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, :not(img,a) {
+    cursor: default;
+}
+
+:root {
+    --main-color: rgb(31, 102, 9)
+}
+
+/* Navigation bar */
+
+div.navbar {
+    display:flex;
+    background-color: var(--main-color);
+}
+
+ul.navbar {
+    float: right;
+    width: 100%;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+ul.navbar > li {
+    float:left;
+    text-align: center;
+}
+
+ul.navbar > li > a {
+    padding: 7px 12px;
+    text-decoration: none;
+    color:white;
+    display: block;
+    font-family: "Quicksand";
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+    cursor:pointer;
+}
+
+ul.navbar li a:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+
+div.mobileNav {
+    display:none;
+    width:100%;
+    background-color: var(--main-color);
+}
+
+ul.mobileNav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+ul.mobileNav li {
+    text-align: center;
+    width:20%;
+}
+
+ul.mobileNav li a {
+    padding: 7px 12px;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+ul.mobileNav li a i {
+    
+    color:white;
+    transform:scale(2);
+}
+
+@media only screen and (max-width:450px) {
+    div.mobileNav {
+        display:block;
+    }
+
+    div.navbar {
+        display: none;
+    }
+}
