@@ -29,3 +29,11 @@
     align-items: center;
     text-align: center;
 }
+
+.item {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
