@@ -37,3 +37,17 @@
     justify-content: center;
     align-items: center;
 }
+
+.item img {
+    border:2px solid black;
+}
+
+.item h2, .item h3, .item p {
+    margin:10px auto;
+}
+
+.item p {
+    width:500px;
+}
+
+
