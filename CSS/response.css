@@ -55,3 +55,10 @@ html {
 	color:white
 }
 
+
+@media only screen and (max-width:600px) {
+	* {
+		transform: scale(0.97);
+	}
+}
+
