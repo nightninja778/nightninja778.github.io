@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald|Pacifico|Quicksand&display=swap');
 
 html {
 	font-size: 16px;
@@ -7,23 +9,39 @@ html {
 }
 
 form {
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .form-row {
 	margin: auto 40px;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-top: 12px;
 	list-style-type: none;
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 .form-row label {
 	font-size: 1.1rem;
-	flex:.6;
+	-webkit-box-flex:.6;
+	    -ms-flex:.6;
+	        flex:.6;
 }
 
 .form-row input {
@@ -44,11 +62,16 @@ form {
 	}
 
 	.form-row {
-		flex-direction:column;
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		    -ms-flex-direction:column;
+		        flex-direction:column;
 	}
 
 	.form-row input, .form-row label {
-		flex:unset;
+		-webkit-box-flex:unset;
+		    -ms-flex:unset;
+		        flex:unset;
 		width:unset;
 	}
 
@@ -58,6 +81,7 @@ form {
 
 	#submit {
 		width:100%;
-		align-self:center;
+		-ms-flex-item-align:center;
+		    align-self:center;
 	}
 }

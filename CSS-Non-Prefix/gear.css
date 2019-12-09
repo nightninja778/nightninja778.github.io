@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald|Pacifico|Quicksand&display=swap');
+
+* {
+    font-family: "Quicksand";
+    box-sizing: border-box;
+}
+
+.header {
+    display:flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin:10px;
+}
+
+.header h1 {
+    font-family: "Pacifico", cursive;
+    letter-spacing:2px;
+    font-weight: 100;
+    margin-bottom:20px;
+}
+
+
+.itemList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.item {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img {
+    border:2px solid black;
+}
+
+.item h2, .item h3, .item p {
+    margin:10px auto;
+}
+
+.item p {
+    width:500px;
+}
+
+@media only screen and (max-width:600px) {
+    
+    .item p {
+        width: 90%;
+        text-align: justify;
+    }
+    .item {
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+    .item img {
+        object-fit: cover;
+        width:100%;
+    }
+
+}

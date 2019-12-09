@@ -10,14 +10,15 @@
     cursor: default;
 }
 
+:root {
+    --main-color: rgb(31, 102, 9)
+}
 
 /* Navigation bar */
 
 div.navbar {
-    display:-webkit-box;
-    display:-ms-flexbox;
     display:flex;
-    background-color: rgb(31, 102, 9);
+    background-color: var(--main-color);
 }
 
 ul.navbar {
@@ -39,38 +40,28 @@ ul.navbar > li > a {
     display: block;
     font-family: "Quicksand";
     font-size: 20px;
-    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     cursor:pointer;
 }
 
 ul.navbar li a:hover {
     background-color: white;
-    color: rgb(31, 102, 9);
+    color: var(--main-color);
 }
 
 div.mobileNav {
     display:none;
     width:100%;
-    background-color: rgb(31, 102, 9);
+    background-color: var(--main-color);
 }
 
 ul.mobileNav {
     overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
 }
 
 ul.mobileNav li {
@@ -87,8 +78,7 @@ ul.mobileNav li a {
 ul.mobileNav li a i {
     
     color:white;
-    -webkit-transform:scale(2);
-            transform:scale(2);
+    transform:scale(2);
 }
 
 @media only screen and (max-width:450px) {
@@ -106,8 +96,7 @@ ul.mobileNav li a i {
         display:block
     }
     div.navbar {
-        -webkit-transform:scale(1.3);
-                transform:scale(1.3);
+        transform:scale(1.3);
         display:none;
     }
 }
